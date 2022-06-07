@@ -136,7 +136,7 @@ const char* password = "12345678";
 const uint16_t port = 8000;
 String RemotePortUDP = "8000";
 String LocalPortUDP = "8000";
-String ServerIP = "115.74.105.253";
+String ServerIP = "20.210.212.103";
 String RemotePortTCP = "8002";
 String LocalPortTCP = "8002";
 String Hello[2] = {"HELLO", "123"};
@@ -686,7 +686,7 @@ size_t parse_tail(String Info, String *Attr) {
 void serial_initialize (void) {
   Serial.begin(115200);
   Serial.setTimeout(5000);
-  while(!Serial);
+  // while(!Serial);
   Serial.println("Hello World ESP32");
 
   Serial.println("Wait setup the 4G Module");
